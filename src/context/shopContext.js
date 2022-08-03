@@ -1,6 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import Client from "shopify-buy";
 
-export class shopContext extends Component {
+const client = Client.buildClient({
+    domain: "your-shop-name.myshopify.com",
+    storefrontAccessToken: "your-storefront-access-token"
+});
+
+export class ShopProvider extends Component {
     render() {
         return (
             <div>
@@ -10,4 +16,4 @@ export class shopContext extends Component {
     }
 }
 
-export default shopContext
+export default ShopProvider;
