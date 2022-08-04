@@ -30,7 +30,12 @@ export class ShopProvider extends Component {
     };
 
     fetchCheckout = async (checkoutId) => {
-        
+        client.checkout
+        .fetch(checkoutId)
+        .then((checkout) => {
+            this.setState({ checkout: checkout });
+        })
+        .catch((error) => console.log(error));
     };
 
     addItemToCheckout = async () => {
