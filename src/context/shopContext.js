@@ -52,7 +52,8 @@ export class ShopProvider extends Component {
     };
 
     fetchProductWithHandle = async (handle) => {
-        
+        const product = await client.product.fetchByHandle(handle);
+        this.setState({ product: product });
     };
 
     render() {
