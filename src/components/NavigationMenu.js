@@ -16,7 +16,7 @@ import { ShopContext } from "../context/shopContext"
 import { Link } from "react-router-dom"
 
 
-const NavMenu = () => {
+const NavigationMenu = () => {
     const { isMenuOpen, closeMenu } = useContext(ShopContext)
 
     return (
@@ -36,7 +36,7 @@ const NavMenu = () => {
                         </VStack>
 
                         </DrawerBody>
-                        
+
                         <DrawerFooter textAlign="center">
                             <Text w="100%">© Copyright www.workingwithshopify.com</Text>
                         </DrawerFooter>
@@ -47,4 +47,4 @@ const NavMenu = () => {
     )
 }
 
-export default NavMenu;
+export default NavigationMenu;
