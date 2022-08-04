@@ -7,6 +7,39 @@ const client = Client.buildClient({
 });
 
 export class ShopProvider extends Component {
+    state = {
+        products: [],
+        product: {},
+        checkout: {},
+        isCartOpen: false,
+        isMenuOpen: false
+    };
+
+    createCheckout = async () => {
+        const checkout = await client.checkout.create();
+    };
+
+    fetchCheckout = async () => {
+
+    };
+
+    addItemToCheckout = async () => {
+        
+    };
+
+    removeLineItem = async () => {
+    
+    }
+
+    fetchAllProducts = async () => {
+        const products = await client.product.fetchAll();
+        this.setState({ products: products });
+    };
+
+    fetchProductWithHandle = async (handle) => {
+        
+    };
+
     render() {
         return (
             <div>
