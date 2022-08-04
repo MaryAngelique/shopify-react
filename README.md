@@ -4,11 +4,11 @@ README TEMPLATE W/O Loom
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [What I learned](#what-i-learned)
   - [Demo](#project-demo)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -23,7 +23,6 @@ Users should be able to:
 
 #### - 
 
-### What I Learned
 
 ### Links
 
@@ -42,6 +41,17 @@ Users should be able to:
 - 
 - 
 - 
+
+### What I Learned
+- How to Create a Shopify Storefront (Theme) using React and Chakra-UI
+- How to Create a Headless Shopify Storefront
+- Connecting to Shopify Buy SDK
+- Using Chakra UI to quickly build custom storefronts
+- Shopify Partners Account and Dashboard
+- React Context
+- How to build dynamic components
+- Managing State
+
 
 ## Author
 
