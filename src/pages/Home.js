@@ -43,8 +43,17 @@ const Home = () => {
                 button
                 image="https://cdn.shopify.com/s/files/1/0472/5705/9496/files/premium-bath-bombs.jpg?v=1610066758"
                 heading="Heading" 
-                text="I'm baby kale chips twee skateboard tattooed, DIY iPhone ugh mixtape tumeric unicorn narwhal. Iceland shoreditch authentic, sartorial vegan twee flannel banh mi bushwick retro farm-to-table single-origin coffee. " 
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla felis risus, non rutrum odio hendrerit in. Nunc congue egestas nibh a efficitur. Aenean viverra lorem nec metus sollicitudin pulvinar. Sed feugiat facilisis mauris, vitae gravida velit convallis in. Suspendisse scelerisque purus in nisi tristique, sed consequat tortor blandit. Vivamus a laoreet lectus, ut vehicula orci. Pellentesque id leo odio. Nam blandit et ante nec faucibus."
             />
+
+            <ImageWithText 
+                reverse
+                button
+                image="https://cdn.shopify.com/s/files/1/0472/5705/9496/files/bath-bomb-and-candle.jpg?v=1610066758"
+                heading="Second Heading" 
+                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla felis risus, non rutrum odio hendrerit in. Nunc congue egestas nibh a efficitur. Aenean viverra lorem nec metus sollicitudin pulvinar. Sed feugiat facilisis mauris, vitae gravida velit convallis in. Suspendisse scelerisque purus in nisi tristique, sed consequat tortor blandit. Vivamus a laoreet lectus, ut vehicula orci. Pellentesque id leo odio. Nam blandit et ante nec faucibus." 
+            />
+            
         </Box>
     )
 }
