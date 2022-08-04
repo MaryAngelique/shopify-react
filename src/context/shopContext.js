@@ -15,14 +15,22 @@ export class ShopProvider extends Component {
         isMenuOpen: false
     };
 
+    componentDidMount() {
+        if (localStorage.checkout_id) {
+            this.fetchCheckout(localStorage.checkout_id)
+        } else {
+            this.createCheckout()
+        }
+    }
+
     createCheckout = async () => {
         const checkout = await client.checkout.create();
         localStorage.setItem("checkout_id", checkout.id)
         this.setState({ checkout: checkout });
     };
 
-    fetchCheckout = async () => {
-
+    fetchCheckout = async (checkoutId) => {
+        
     };
 
     addItemToCheckout = async () => {
