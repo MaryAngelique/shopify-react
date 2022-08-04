@@ -9,6 +9,7 @@ import {
 } from "@chakra-ui/react"
 
 import ImageWithText from "../components/ImageWithText";
+import Hero from "../components/Hero";
 
 const Home = () => {
 
@@ -26,6 +27,7 @@ const Home = () => {
 
     return (
         <Box>
+            <Hero />
             <Grid templateColumns={["repeat(1fr)", "repeat(3, 1fr)"]}>
                 {products.map(product => (
                     <Link to={`/products/${product.handle}`} key={product.id} >
