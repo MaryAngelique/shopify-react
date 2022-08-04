@@ -15,10 +15,16 @@ const Home = () => {
 
 
     if (!products) return <div>loading...</div>
-    
+
     return (
         <div>
-
+            {
+                products.map(product => (
+                    <a key={ product.title }>
+                        { product.title }
+                    </a>
+                ))
+            }
         </div>
     )
 }
