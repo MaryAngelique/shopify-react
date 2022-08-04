@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [ GitHub Solution](GitHub )
+- Solution URL: [Shopify React Website: Bath Bombs Store GitHub Solution](https://github.com/MaryAngelique/shopify-react)
 - Live Site URL: [ Website](Deployed website)
 
 ## My process
