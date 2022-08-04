@@ -11,7 +11,7 @@ function App() {
     return (
       <div className="App">
           <Router>
-              <Route path="/products/">
+              <Route path="/products/:handle">
                   <ProductPage />
               </Route>
               <Route path="/" exact>
