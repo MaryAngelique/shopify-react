@@ -4,7 +4,9 @@ import { ShopContext } from "../context/shopContext";
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+        
+    </div>
   )
 }
 

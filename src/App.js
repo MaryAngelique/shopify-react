@@ -1,10 +1,25 @@
+import { 
+    BrowserRouter as Router,
+    Route
+} from "react-router-dom";
+
+
+import Home from "./pages/Home";
+import ProductPage from "./pages/ProductPage";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>React Shopify Store</h1>
-    </div>
-  );
+    return (
+      <div className="App">
+          <Router>
+              <Route path="/products/">
+                  <ProductPage />
+              </Route>
+              <Route path="/" exact>
+                  <Home />
+              </Route>
+          </Router>
+      </div>
+    );
 }
 
 export default App;
