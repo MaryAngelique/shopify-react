@@ -21,6 +21,7 @@ function App() {
                       <Home />
                   </Route>
               </Switch>
+              <p>Base Footer</p>
           </Router>
       </div>
     );
