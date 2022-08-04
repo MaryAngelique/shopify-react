@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Client from "shopify-buy";
 
+const ShopContext = React.createContext();
+
 const client = Client.buildClient({
     domain: "your-shop-name.myshopify.com",
     storefrontAccessToken: "your-storefront-access-token"
@@ -56,13 +58,44 @@ export class ShopProvider extends Component {
         this.setState({ product: product });
     };
 
+    closeCart = () => {
+
+    };
+
+    openCart = () => {
+
+    };
+
+    closeMenu = () => {
+
+    }
+
+    openMenu = () => {
+
+    }
+
+
     render() {
         return (
-            <div>
-                
-            </div>
+            <ShopContext.Provider
+                value = {{
+                    ...this.state,
+                    fetchAllProducts: this.fetchAllProducts,
+                    fetchProductWithHandle: this.fetchProductWithHandle,
+                    addItemToCheckout: this.addItemToCheckout,
+                    closeCart: this.closeCart,
+                    openCart: this.openCart,
+                    closeMenu: this.closeMenu,
+                    openMenu: this.openMenu
+            }}>
+                { this.props.children }
+            </ShopContext.Provider>
         )
     }
 }
+
+const ShopConsumer = ShopContext.Consumer;
+
+export { ShopConsumer, ShopContext };
 
 export default ShopProvider;
