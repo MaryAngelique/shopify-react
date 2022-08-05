@@ -27,7 +27,7 @@ const Home = () => {
 
     return (
         <Box>
-            <Hero />
+            <Hero  />
             <Grid templateColumns={["repeat(1fr)", "repeat(3, 1fr)"]}>
                 {products.map(product => (
                     <Link to={`/products/${product.handle}`} key={product.id} >
