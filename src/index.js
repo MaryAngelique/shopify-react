@@ -6,15 +6,12 @@ import reportWebVitals from "./reportWebVitals";
 import ShopProvider from "./context/shopContext";
 import { ChakraProvider } from "@chakra-ui/react";
 
-ReactDOM.render(
-    <ChakraProvider>
-        <ShopProvider>
-            <App />
-        </ShopProvider>
-    </ChakraProvider>,
-    document.getElementById('root')
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
 );
-
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
