@@ -77,7 +77,7 @@ export class ShopProvider extends Component {
     };
 
     closeCart = () => {
-
+        this.setState({ isCartOpen: false });
     };
 
     openCart = () => {
