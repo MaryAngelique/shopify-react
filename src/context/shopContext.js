@@ -89,7 +89,7 @@ export class ShopProvider extends Component {
     }
 
     openMenu = () => {
-
+        this.setState({ isMenuOpen: true })
     }
 
 
