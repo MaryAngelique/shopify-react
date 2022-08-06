@@ -57,8 +57,11 @@ export class ShopProvider extends Component {
             this.openCart();
     };
 
-    removeLineItem = async () => {
-    
+    removeLineItem = async (lineItemIdsToRemove) => {
+        const checkoutId = this.state.checkout.id
+
+        client.checkout.removeLineItems(checkoutId, lineItemIdsToRemove)
+        .then(checkout => this.setState({ checkout }))
     }
 
     fetchAllProducts = async () => {
