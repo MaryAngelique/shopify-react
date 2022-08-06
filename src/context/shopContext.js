@@ -64,7 +64,7 @@ export class ShopProvider extends Component {
         .then(checkout => this.setState({ checkout }))
     }
 
-    fetchAllProducts = async () => {
+    fetchAllProducts = async (product) => {
         const products = await client.product.fetchAll();
         this.setState({ products: products });
 
